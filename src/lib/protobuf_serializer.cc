@@ -16,6 +16,7 @@
 
 #include <google/protobuf/text_format.h>
 #include <sparrowhawk/protobuf_serializer.h>
+using namespace std;
 
 namespace speech {
 namespace sparrowhawk {

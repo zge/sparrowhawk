@@ -26,6 +26,10 @@ using std::vector;
 #include <fst/compat.h>
 #include <re2/re2.h>
 
+#define DISALLOW_COPY_AND_ASSIGN(TypeName) \
+  TypeName(const TypeName&);                 \
+  void operator=(const TypeName&)
+
 namespace speech {
 namespace sparrowhawk {
 

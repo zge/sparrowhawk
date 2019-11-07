@@ -33,10 +33,15 @@ using std::vector;
 #include <thrax/grm-manager.h>
 #include <re2/re2.h>
 
+#define DISALLOW_COPY_AND_ASSIGN(TypeName) \
+  TypeName(const TypeName&);                 \
+  void operator=(const TypeName&)
+
 namespace speech {
 namespace sparrowhawk {
 
 using thrax::GrmManager;
+using std::string;
 class Utterance;
 
 class ProtobufSerializer {
